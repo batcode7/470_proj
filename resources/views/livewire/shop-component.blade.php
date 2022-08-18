@@ -51,7 +51,7 @@
 
 						</div>
 
-					</div><!--end wrap shop control-->
+					</div>
 
                     <style>
 						.wish-btn{
@@ -135,7 +135,7 @@
 						{{$products->links()}}
 						
 					</div>
-				</div><!--end main products area-->
+				</div>
 
 				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 sitebar">
 					<div class="widget mercado-widget categories-widget">
@@ -143,35 +143,20 @@
 						<div class="widget-content">
 							<ul class="list-category">
 
-							@foreach ($catagories as $catagory)
-							<li class="category-item has-child-cate">
-									<a href="{{route('product.catagory',['catagory_slug'=>$catagory->slug])}}" class="cate-link">{{$catagory->name}}</a>
-								
-									
-							</li>
-							@endforeach
-
-							
-								
-								
-								
+							    @foreach ($catagories as $catagory)
+							    <li class="category-item has-child-cate">
+							    		<a href="{{route('product.catagory',['catagory_slug'=>$catagory->slug])}}" class="cate-link">{{$catagory->name}}</a>
+							    	
+							    		
+							    </li>
+							    @endforeach
 							</ul>
 						</div>
-					</div>
-					
+					</div>																								
+				</div>
 
-					
+			</div>
 
-					
-
-					
-
-					
-
-				</div><!--end sitebar-->
-
-			</div><!--end row-->
-
-		</div><!--end container-->
+		</div>
 
 	</main>

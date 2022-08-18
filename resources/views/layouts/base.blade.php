@@ -184,7 +184,7 @@
 							<i class="fa fa-truck" aria-hidden="true"></i>
 							<div class="wrap-left-info">
 								<h4 class="fc-name">Free Shipping</h4>
-								<p class="fc-desc">Free On Oder Over 100 taka</p>
+								<p class="fc-desc">Free On Oder Over 50 taka</p>
 							</div>
 
 						</li>
