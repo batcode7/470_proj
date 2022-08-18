@@ -21,7 +21,7 @@ class AdminOrderComponent extends Component
         }
         else if ($status == "canceled")
         {
-            $order->calceled_date = DB::raw('CURRENT_DATE');
+            $order->canceled_date = DB::raw('CURRENT_DATE');
             $this-> sendOrderCancellationMail($order);
         }
         $order -> save();

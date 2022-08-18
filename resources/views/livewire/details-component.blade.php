@@ -27,6 +27,7 @@
                         </div>						
 						<div class="wrap-price"><span class="product-price">{{$product->regular_price}}</span></div>                       
 						@if ($product->catagory_id == "3")
+						<a href="#" class="btn add-to-cart" wire:click.prevent="addToMechanicPreferencelist({{$product->id}},'{{$product->name}}', {{$product->regular_price}})">Add Preference List</a>
 							@if  ($product->stock_status == "instock") 
 							   <div class="wrap-price"><span class="-">Available</span></div>
 							@else 
